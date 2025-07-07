@@ -30,4 +30,5 @@ button.addEventListener('click', function () {
     } else {
         alert('Please fill in all fields.');
     }
+    return;
 });
