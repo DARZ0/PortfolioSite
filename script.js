@@ -18,12 +18,3 @@ function filterProjects() {
     }
 }
 
-function messageSent() {
-    const message = document.getElementById('message');
-    if (message.value.trim() === '') {
-        alert('Please enter a message before sending.');
-        return;
-    }
-    alert('Message sent successfully!');
-    message.value = ''; // Clear the message input
-}
