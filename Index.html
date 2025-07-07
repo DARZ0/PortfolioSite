@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio website showcasing my projects and skills as a new developer.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="JavaScript" href="script.js">
+    <title>My Portfolio</title>
+</head>
+<header role="banner" aria-label="Main Navigation">
+    <div class="topnav">
+        <a href="#home" class="active" aria-label="Homepage">My Portfolio</a>
+        <div id="myLinks" aria-label="Section Navigation">
+            <a href="#about-me" aria-label="About Me Section">About</a>
+            <a href="#skills" aria-label="Skills Section">Skills</a>
+            <a href="#projects" aria-label="Projects Section">Projects</a>
+            <a href="#contact" aria-label="Contact Section">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+<body>
+    <main role="main">
+        <section id="about-me" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>
+                Welcome to my portfolio! My name is Daniel Resendiz and I am a new developer with a passion for creating
+                innovative web applications.
+                My
+                journey in web development has been exciting, and I am eager to share my projects with you.
+            </p>
+        </section>
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul aria-label="Skills List"></ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>Responsive Design</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            </ul>
+        </section>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <p>
+                Here are some of the projects I've worked on:
+            </p>
+            <label for="project-filter">Filter projects:</label>
+            <input type="text" id="project-filter" placeholder="Type to filter projects..." onkeyup="filterProjects()"
+                aria-label="Filter projects">
+            <ul id="projects-list>
+                <li>
+                    <article aria-label=" Library Management Project">
+                <figure>
+                    <a href="https://github.com/DARZ0/Library-Management" target="_blank">Library Management</a>
+                </figure>
+                <p>A C# application for managing library resources.</p>
+                </article>
+                </li>
+                <li>
+                    <article aria-label="Inventory Manager Project">
+                        <figure>
+                            <a href="https://github.com/DARZ0/InventoryManager" target="_blank">Inventory Manager</a>
+                        </figure>
+                        <p>A C# application for tracking inventory levels and orders.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form action="#" method="post" role="form" aria-label="Contact Form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

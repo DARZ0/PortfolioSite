@@ -1,0 +1,230 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .checkbtn {
+        display: block;
+        font-size: 5rem;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+    }
+
+    .nav-mobile {
+        top: 160px;
+        width: 100%;
+    }
+
+    .nav-mobile a {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+section {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+@media (min-width: 800px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    section {
+        flex: 1 1 40%;
+        min-width: 350px;
+    }
+
+    #about-me,
+    #skills {
+        flex-basis: 45%;
+    }
+
+    #projects,
+    #contact {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+/* Responsive typography */
+h1,
+h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #7a7a7a;
+}
+
+/* Forms */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    .col {
+        flex: 1 1 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .col {
+        flex: 1 1 33.3333%;
+    }
+
+    main {
+        padding: 40px 0;
+    }
+}
+
+/* Mobile styles (up to 599px) */
+@media (max-width: 599px) {
+    .container {
+        padding: 12px;
+        margin: 16px 4px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .col {
+        padding: 8px 0;
+    }
+}
+
+/* Tablet styles (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .container {
+        padding: 20px;
+        margin: 32px 8px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .col {
+        flex: 1 1 50%;
+        padding: 10px;
+    }
+}
+
+/* Desktop styles (900px and up) */
+@media (min-width: 900px) {
+    .container {
+        padding: 24px;
+        margin: 40px auto;
+    }
+
+    nav {
+        gap: 16px;
+    }
+
+    .col {
+        flex: 1 1 33.3333%;
+        padding: 12px;
+    }
+}
