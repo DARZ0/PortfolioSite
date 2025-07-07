@@ -27,7 +27,7 @@ button.addEventListener('click', function (event) {
 
     if (name && email && message) {
         alert(`Thank you, ${name}! Your message has been sent.`);
-        document.getElementById('contact-form').reset();
+        document.getElementById('contact').reset();
     } else {
         alert('Please fill in all fields.');
     }
